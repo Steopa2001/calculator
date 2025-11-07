@@ -3,11 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Stefan Moraru" />
     <link rel="stylesheet" href="./style.css" />
     <title>Calculator</title>
   </head>
   <body>
-    
+    <div id="calc-container">
+      <input id="calc-screen" readonly />
+      <div id="calc-buttons">
+        <button onclick="addSymbol('+')">+</button>
+        <button onclick="addSymbol('7')">7</button>
+        <button onclick="addSymbol('8')">8</button>
+        <button onclick="addSymbol('9')">9</button>
+
+        <button onclick="addSymbol('-')">-</button>
+        <button onclick="addSymbol('4')">4</button>
+        <button onclick="addSymbol('5')">5</button>
+        <button onclick="addSymbol('6')">6</button>
+
+        <button onclick="addSymbol('*')">*</button>
+        <button onclick="addSymbol('1')">1</button>
+        <button onclick="addSymbol('2')">2</button>
+        <button onclick="addSymbol('3')">3</button>
+
+        <button onclick="addSymbol('/')">/</button>
+        <button onclick="addSymbol('0')">0</button>
+        <button onclick="addSymbol('.')">.</button>
+        <button onclick="computeResult()">=</button>
+        <button onclick="resetScreen()">AC</button>
+      </div>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
